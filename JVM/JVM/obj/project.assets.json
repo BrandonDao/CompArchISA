@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\Documents\\GitHub\\Projects\\CSharp\\InstructionSetArchitecture\\JVM\\JVM\\JVM.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\Documents\\GitHub\\CompArchISA\\JVM\\JVM\\JVM.csproj",
       "projectName": "JVM",
-      "projectPath": "C:\\Users\\brand\\Documents\\GitHub\\Projects\\CSharp\\InstructionSetArchitecture\\JVM\\JVM\\JVM.csproj",
+      "projectPath": "C:\\Users\\brand\\Documents\\GitHub\\CompArchISA\\JVM\\JVM\\JVM.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\Documents\\GitHub\\Projects\\CSharp\\InstructionSetArchitecture\\JVM\\JVM\\obj\\",
+      "outputPath": "C:\\Users\\brand\\Documents\\GitHub\\CompArchISA\\JVM\\JVM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",

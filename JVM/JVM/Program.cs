@@ -10,7 +10,7 @@ namespace JVM
 
         static byte[] LoadAssemblyFile()
         {
-            return System.IO.File.ReadAllBytes(@"C:\Users\brand\Downloads\Java\Program.class");
+            return System.IO.File.ReadAllBytes(@"C:\Users\brand\Documents\Github\CompArchISA\JavaFiles\Program.class");
         }
 
         static void Main(string[] args)
