@@ -1,0 +1,6 @@
+﻿SET R0 0 0
+SET R1 1 0
+loop:
+ADD R0 R0 R1
+SKP loop:
+SET R29 FF FF

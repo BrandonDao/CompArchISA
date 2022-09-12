@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BitshiftingPractice.Instructions.Instruction">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAABAAAAAAEAEAAAAAABAAAAAAAAAAAAAAAAEAQ=</HashCode>
+      <FileName>Instructions\Instruction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BitshiftingPractice.Instructions.ADD">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Instructions\ADD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BitshiftingPractice.Instructions.MathAndLogic">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Instructions\MathAndLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BitshiftingPractice.Instructions.SUB">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="BitshiftingPractice.Instructions.MathAndLogic" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="2.377" />
+        <Point X="3" Y="3.092" />
+        <Point X="4" Y="3.092" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Instructions\SUB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BitshiftingPractice.Instructions.OpCodes">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAgAAAAAAMAAAACAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Instructions\Instruction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

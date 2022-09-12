@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Disassembler
+build_property.ProjectDir = C:\Users\brand\Documents\GitHub\Projects\CSharp\InstructionSetArchitecture\ISA\Disassembler\
