@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace SharedLibrary.Layouts
 {
     public class SetLayout : ILayout
     {
-        public string RegexPattern => @"(SET) R([012]\d|\d) ([0-9ABCDEF][0-9ABCDEF]?) ([0-9ABCDEF][0-9ABCDEF]?)(?:\r)?";
+        public string RegexPattern => @"(SET) R(0*[1-6]?) ([0-9A-F][0-9A-F]?) ([0-9A-F][0-9A-F]?)";
 
         public byte[] Parse(Match match)
         {

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace SharedLibrary.Layouts
 {
     public class MathAndLogicLayout : ILayout
     {
-        public string RegexPattern => @"(ADD|SUB|MUL|DIV|MOD|AND|OR|XOR|GT|LT|EQ) R([012][\d]|\d) R([012][\d]|\d) R([012][\d]|\d)(?:\r)?";
+        public string RegexPattern => @"(ADD|SUB|MUL|DIV|MOD|AND|OR|XOR|GT|LT|EQ) R(0*[1-6]?) R(0*[1-6]?)) R(0*[1-6]?)";
 
         public byte[] Parse(Match match)
         {

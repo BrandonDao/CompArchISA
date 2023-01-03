@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace SharedLibrary.Layouts
 {
     public class ConditionalSkipLayout : ILayout
     {
-        public string RegexPattern => @"(SKP[FT]) R([012]\d|\d) (?:([0-9ABCDEF][0-9ABCDEF]?) ([0-9ABCDEF][0-9ABCDEF]?)|(?:(.*:)))(?:\r)?";
+        public string RegexPattern => @"(SKP[TF]) R(0*[1-6]?) (?:(?:([0-9A-F][0-9A-F]?) ([0-9A-F][0-9A-F]?))|([a-zA-Z].*:))";
 
         public byte[] Parse(Match match)
         {
             // Uses label name
-            if (match.Groups[4].Success)
+            if (match.Groups[5].Success)
             {
-                var lineNum = Instruction.LabelToLineMap[match.Groups[2].Value];
+                var lineNum = Instruction.LabelToLineMap[match.Groups[5].Value];
 
                 return new byte[]
                 {

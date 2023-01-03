@@ -75,7 +75,7 @@ namespace SharedLibrary
             return output;
         }
 
-        private static readonly string labelPattern = @"(?i)^([abcdefghijklmnopqrstuvwxyz]+):";
+        private static readonly string labelPattern = @"(?i)^([a-z]+):";
         public static List<Instruction> Parse(string[] assemblyInstructions)
         {
             Instruction[] allInstructions = GetAllInstructions();

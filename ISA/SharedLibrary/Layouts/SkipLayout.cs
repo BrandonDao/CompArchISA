@@ -4,7 +4,7 @@ namespace SharedLibrary.Layouts
 {
     public class SkipLayout : ILayout
     {
-        public string RegexPattern => @"(SKP) (?:([0-9ABCDEF][0-9ABCDEF]?) ([0-9ABCDEF][0-9ABCDEF]?)|(?:(.*:)))(?:\r)?";
+        public string RegexPattern => @"(SKP) (?:(?:.. ([0-9A-F][0-9A-F]?) ([0-9A-F][0-9A-F]?))|([a-zA-Z].*:))";
 
         public byte[] Parse(Match match)
         {
@@ -27,8 +27,8 @@ namespace SharedLibrary.Layouts
             {
                 Instruction.NameToOpcodeMap["SKP"],
                 00,
+                Instruction.HexToDec(match.Groups[2].Value),
                 Instruction.HexToDec(match.Groups[3].Value),
-                Instruction.HexToDec(match.Groups[4].Value),
             };
         }
     }
