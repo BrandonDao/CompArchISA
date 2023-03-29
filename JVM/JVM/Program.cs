@@ -21,7 +21,7 @@ namespace JVM
             Method_Info main = classFile.GetMethod("main", "([Ljava/lang/String;)V");
             Code_Attribute_Info code = (Code_Attribute_Info)classFile.GetAttribute(main, "Code");
             
-            Method mainMaybe = new Method(main, classFile);
+            var mainMaybe = new Method(main, classFile);
             mainMaybe.Execute();
 
             classFile.DebugPrintInfo();

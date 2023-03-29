@@ -74,7 +74,7 @@ namespace JVM
             Attributes = new Attribute_Info[Attributes_Count];
             ParseAttributes(Attributes_Count, Constant_Pool, Attributes, ref span);
 
-            if (span.Length != 0) throw new Exception("Either invalid Java bytecode file or my code sucks!");
+            if (span.Length != 0) throw new Exception("Either invalid Java bytecode file or parsing error");
         }
 
         private void ParseConstantPool(ref ReadOnlySpan<byte> span)

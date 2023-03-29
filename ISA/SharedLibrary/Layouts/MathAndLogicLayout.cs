@@ -4,7 +4,7 @@ namespace SharedLibrary.Layouts
 {
     public class MathAndLogicLayout : ILayout
     {
-        public string RegexPattern => @"(ADD|SUB|MUL|DIV|MOD|AND|OR|XOR|GT|LT|EQ) R(0*[1-6]?) R(0*[1-6]?)) R(0*[1-6]?)";
+        public string RegexPattern => @"(ADD|SUB|MUL|DIV|MOD|AND|OR|XOR|GT|LT|EQ) R(0*[1-6]?) R(0*[1-6]?) R(0*[1-6]?)";
 
         public byte[] Parse(Match match)
         {
